@@ -1,0 +1,3 @@
+ModuleName: SignalConnectorTestModule
+ModuleType: Test
+Exclude: False

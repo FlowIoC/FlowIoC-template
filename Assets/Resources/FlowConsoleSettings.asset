@@ -1,0 +1,115 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9d7f8e63cf1a4e4d8a5bb6f7a9c1e45, type: 3}
+  m_Name: FlowConsoleSettings
+  m_EditorClassIdentifier: FlowIoC::FlowIoC.ConsoleModule.FlowConsoleSettings
+  IsLoggingEnabled: 1
+  DeepAnalysis: 0
+  SendLogsToUnityConsole: 0
+  AutoAddEnableLogDefine: 1
+  _logTypes:
+  - Name: All
+    Value: 0
+    LogColor: {r: 1, g: 1, b: 1, a: 1}
+    IsVisible: 1
+    IsMandatory: 1
+    IsAutoRegistered: 0
+    ProfileName: 
+  - Name: Context
+    Value: 5
+    LogColor: {r: 0.2, g: 0.6, b: 1, a: 1}
+    IsVisible: 1
+    IsMandatory: 1
+    IsAutoRegistered: 0
+    ProfileName: 
+  - Name: Injection
+    Value: 10
+    LogColor: {r: 0.2, g: 1, b: 0.2, a: 1}
+    IsVisible: 1
+    IsMandatory: 1
+    IsAutoRegistered: 0
+    ProfileName: 
+  - Name: Signal
+    Value: 11
+    LogColor: {r: 1, g: 1, b: 1, a: 1}
+    IsVisible: 1
+    IsMandatory: 1
+    IsAutoRegistered: 0
+    ProfileName: 
+  - Name: Command
+    Value: 14
+    LogColor: {r: 1, g: 0.7, b: 0.2, a: 1}
+    IsVisible: 1
+    IsMandatory: 1
+    IsAutoRegistered: 0
+    ProfileName: 
+  - Name: CommandOperation
+    Value: 15
+    LogColor: {r: 1, g: 0.7, b: 0.2, a: 1}
+    IsVisible: 1
+    IsMandatory: 1
+    IsAutoRegistered: 0
+    ProfileName: 
+  - Name: Function
+    Value: 20
+    LogColor: {r: 0.8, g: 0.4, b: 1, a: 1}
+    IsVisible: 1
+    IsMandatory: 1
+    IsAutoRegistered: 0
+    ProfileName: 
+  - Name: Screen
+    Value: 25
+    LogColor: {r: 0.3, g: 0.8, b: 0.8, a: 1}
+    IsVisible: 1
+    IsMandatory: 1
+    IsAutoRegistered: 0
+    ProfileName: 
+  - Name: Pool
+    Value: 30
+    LogColor: {r: 1, g: 0.4, b: 0.7, a: 1}
+    IsVisible: 1
+    IsMandatory: 1
+    IsAutoRegistered: 0
+    ProfileName: 
+  - Name: Model
+    Value: 35
+    LogColor: {r: 0.6, g: 1, b: 0.6, a: 1}
+    IsVisible: 1
+    IsMandatory: 1
+    IsAutoRegistered: 0
+    ProfileName: 
+  - Name: Asset
+    Value: 40
+    LogColor: {r: 1, g: 1, b: 1, a: 1}
+    IsVisible: 1
+    IsMandatory: 1
+    IsAutoRegistered: 0
+    ProfileName: 
+  - Name: Default
+    Value: 100
+    LogColor: {r: 1, g: 1, b: 1, a: 1}
+    IsVisible: 1
+    IsMandatory: 0
+    IsAutoRegistered: 0
+    ProfileName: Default
+  _logProfiles:
+  - Name: Default
+    IsMandatory: 1
+    IsEditable: 0
+    Prefix: 
+    PrefixStyle: 0
+    PrefixColor: {r: 1, g: 1, b: 1, a: 1}
+    MessageStyle: 0
+    MessageColor: {r: 1, g: 1, b: 1, a: 1}
+    Postfix: 
+    PostfixStyle: 0
+    PostfixColor: {r: 1, g: 1, b: 1, a: 1}
