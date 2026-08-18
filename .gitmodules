@@ -1,0 +1,3 @@
+[submodule "Packages/FlowIoC"]
+	path = Packages/FlowIoC
+	url = https://github.com/FlowIoC/FlowIoC.git

@@ -101,6 +101,13 @@ MonoBehaviour:
     IsMandatory: 0
     IsAutoRegistered: 0
     ProfileName: Default
+  - Name: SamplesModule
+    Value: 1000
+    LogColor: {r: 1, g: 1, b: 1, a: 1}
+    IsVisible: 1
+    IsMandatory: 0
+    IsAutoRegistered: 1
+    ProfileName: Default
   _logProfiles:
   - Name: Default
     IsMandatory: 1

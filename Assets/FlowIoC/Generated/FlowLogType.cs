@@ -11,5 +11,12 @@ namespace FlowIoC.ConsoleModule
     {
         /// <summary>Default (value: 100)</summary>
         public const int Default = 100;
+
+        #region Module Log Types (Auto-Registered)
+
+        /// <summary>SamplesModule (value: 1000)</summary>
+        public const int SamplesModule = 1000;
+
+        #endregion
     }
 }
