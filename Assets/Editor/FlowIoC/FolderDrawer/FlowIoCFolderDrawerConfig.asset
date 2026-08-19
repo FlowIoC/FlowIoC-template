@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d07a36fe627cf95488753cf476c24720, type: 3}
-  m_Name: ED_CustomFolderConfig
-  m_EditorClassIdentifier: 
+  m_Name: FlowIoCFolderDrawerConfig
+  m_EditorClassIdentifier: FlowIoC.Editor::FlowIoC.FolderDrawer.FlowIoCFolderDrawerConfig
   Enabled: 1
   FolderRules: []
   PathRules:
@@ -29,21 +29,21 @@ MonoBehaviour:
         OverrideFont: 0
         Color: {r: 0, g: 0, b: 0, a: 0}
         Style: 0
-        TextOffset: 0
+        TextOffset: 18.5
         OverrideLabel: 0
         Label: 
       Icon:
         Enable: 0
         Texture: {fileID: 0}
         Size: {x: 0, y: 0}
-        OffsetScaleX: 0
+        OffsetScaleX: 1
         PixelOffsetX: 0
         PixelOffsetY: 0
       Marker:
         Enable: 0
         Texture: {fileID: 0}
         Size: {x: 0, y: 0}
-        OffsetScaleX: 0
+        OffsetScaleX: 1
         PixelOffsetX: 0
         PixelOffsetY: 0
   - PathRule:
@@ -60,21 +60,21 @@ MonoBehaviour:
         OverrideFont: 0
         Color: {r: 0, g: 0, b: 0, a: 0}
         Style: 0
-        TextOffset: 0
+        TextOffset: 18.5
         OverrideLabel: 0
         Label: 
       Icon:
         Enable: 0
         Texture: {fileID: 0}
         Size: {x: 0, y: 0}
-        OffsetScaleX: 0
+        OffsetScaleX: 1
         PixelOffsetX: 0
         PixelOffsetY: 0
       Marker:
         Enable: 0
         Texture: {fileID: 0}
         Size: {x: 0, y: 0}
-        OffsetScaleX: 0
+        OffsetScaleX: 1
         PixelOffsetX: 0
         PixelOffsetY: 0
   - PathRule:
@@ -91,21 +91,21 @@ MonoBehaviour:
         OverrideFont: 0
         Color: {r: 0, g: 0, b: 0, a: 0}
         Style: 0
-        TextOffset: 0
+        TextOffset: 18.5
         OverrideLabel: 0
         Label: 
       Icon:
         Enable: 0
         Texture: {fileID: 0}
         Size: {x: 0, y: 0}
-        OffsetScaleX: 0
+        OffsetScaleX: 1
         PixelOffsetX: 0
         PixelOffsetY: 0
       Marker:
         Enable: 0
         Texture: {fileID: 0}
         Size: {x: 0, y: 0}
-        OffsetScaleX: 0
+        OffsetScaleX: 1
         PixelOffsetX: 0
         PixelOffsetY: 0
   - PathRule:
@@ -122,21 +122,21 @@ MonoBehaviour:
         OverrideFont: 0
         Color: {r: 0, g: 0, b: 0, a: 0}
         Style: 0
-        TextOffset: 0
+        TextOffset: 18.5
         OverrideLabel: 0
         Label: 
       Icon:
         Enable: 0
         Texture: {fileID: 0}
         Size: {x: 0, y: 0}
-        OffsetScaleX: 0
+        OffsetScaleX: 1
         PixelOffsetX: 0
         PixelOffsetY: 0
       Marker:
         Enable: 0
         Texture: {fileID: 0}
         Size: {x: 0, y: 0}
-        OffsetScaleX: 0
+        OffsetScaleX: 1
         PixelOffsetX: 0
         PixelOffsetY: 0
   - PathRule:
@@ -153,21 +153,21 @@ MonoBehaviour:
         OverrideFont: 0
         Color: {r: 0, g: 0, b: 0, a: 0}
         Style: 0
-        TextOffset: 0
+        TextOffset: 18.5
         OverrideLabel: 0
         Label: 
       Icon:
         Enable: 0
         Texture: {fileID: 0}
         Size: {x: 0, y: 0}
-        OffsetScaleX: 0
+        OffsetScaleX: 1
         PixelOffsetX: 0
         PixelOffsetY: 0
       Marker:
         Enable: 0
         Texture: {fileID: 0}
         Size: {x: 0, y: 0}
-        OffsetScaleX: 0
+        OffsetScaleX: 1
         PixelOffsetX: 0
         PixelOffsetY: 0
   - PathRule:
@@ -184,21 +184,21 @@ MonoBehaviour:
         OverrideFont: 0
         Color: {r: 0, g: 0, b: 0, a: 0}
         Style: 0
-        TextOffset: 0
+        TextOffset: 18.5
         OverrideLabel: 0
         Label: 
       Icon:
         Enable: 0
         Texture: {fileID: 0}
         Size: {x: 0, y: 0}
-        OffsetScaleX: 0
+        OffsetScaleX: 1
         PixelOffsetX: 0
         PixelOffsetY: 0
       Marker:
         Enable: 0
         Texture: {fileID: 0}
         Size: {x: 0, y: 0}
-        OffsetScaleX: 0
+        OffsetScaleX: 1
         PixelOffsetX: 0
         PixelOffsetY: 0
   - PathRule:
@@ -215,21 +215,21 @@ MonoBehaviour:
         OverrideFont: 0
         Color: {r: 0, g: 0, b: 0, a: 0}
         Style: 0
-        TextOffset: 0
+        TextOffset: 18.5
         OverrideLabel: 0
         Label: 
       Icon:
         Enable: 0
         Texture: {fileID: 0}
         Size: {x: 0, y: 0}
-        OffsetScaleX: 0
+        OffsetScaleX: 1
         PixelOffsetX: 0
         PixelOffsetY: 0
       Marker:
         Enable: 0
         Texture: {fileID: 0}
         Size: {x: 0, y: 0}
-        OffsetScaleX: 0
+        OffsetScaleX: 1
         PixelOffsetX: 0
         PixelOffsetY: 0
   - PathRule:
@@ -246,20 +246,20 @@ MonoBehaviour:
         OverrideFont: 0
         Color: {r: 0, g: 0, b: 0, a: 0}
         Style: 0
-        TextOffset: 0
+        TextOffset: 18.5
         OverrideLabel: 0
         Label: 
       Icon:
         Enable: 0
         Texture: {fileID: 0}
         Size: {x: 0, y: 0}
-        OffsetScaleX: 0
+        OffsetScaleX: 1
         PixelOffsetX: 0
         PixelOffsetY: 0
       Marker:
         Enable: 0
         Texture: {fileID: 0}
         Size: {x: 0, y: 0}
-        OffsetScaleX: 0
+        OffsetScaleX: 1
         PixelOffsetX: 0
         PixelOffsetY: 0
