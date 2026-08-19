@@ -305,11 +305,14 @@
         "com.unity.modules.imgui": "1.0.0"
       }
     },
-    "flow-ioc": {
+    "com.flowioc.core": {
       "version": "file:FlowIoC",
       "depth": 0,
       "source": "embedded",
-      "dependencies": {}
+      "dependencies": {
+        "com.unity.addressables": "2.9.1",
+        "com.unity.render-pipelines.core": "17.0.0"
+      }
     },
     "com.unity.modules.accessibility": {
       "version": "1.0.0",
