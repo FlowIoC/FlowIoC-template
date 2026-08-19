@@ -39,13 +39,6 @@ MonoBehaviour:
         OffsetScaleX: 1
         PixelOffsetX: 0
         PixelOffsetY: 0
-      Marker:
-        Enable: 0
-        Texture: {fileID: 0}
-        Size: {x: 0, y: 0}
-        OffsetScaleX: 1
-        PixelOffsetX: 0
-        PixelOffsetY: 0
   - PathRule:
       Value: Debug
       Type: 0
@@ -64,13 +57,6 @@ MonoBehaviour:
         OverrideLabel: 0
         Label: 
       Icon:
-        Enable: 0
-        Texture: {fileID: 0}
-        Size: {x: 0, y: 0}
-        OffsetScaleX: 1
-        PixelOffsetX: 0
-        PixelOffsetY: 0
-      Marker:
         Enable: 0
         Texture: {fileID: 0}
         Size: {x: 0, y: 0}
@@ -101,13 +87,6 @@ MonoBehaviour:
         OffsetScaleX: 1
         PixelOffsetX: 0
         PixelOffsetY: 0
-      Marker:
-        Enable: 0
-        Texture: {fileID: 0}
-        Size: {x: 0, y: 0}
-        OffsetScaleX: 1
-        PixelOffsetX: 0
-        PixelOffsetY: 0
   - PathRule:
       Value: Module
       Type: 1
@@ -126,13 +105,6 @@ MonoBehaviour:
         OverrideLabel: 0
         Label: 
       Icon:
-        Enable: 0
-        Texture: {fileID: 0}
-        Size: {x: 0, y: 0}
-        OffsetScaleX: 1
-        PixelOffsetX: 0
-        PixelOffsetY: 0
-      Marker:
         Enable: 0
         Texture: {fileID: 0}
         Size: {x: 0, y: 0}
@@ -163,13 +135,6 @@ MonoBehaviour:
         OffsetScaleX: 1
         PixelOffsetX: 0
         PixelOffsetY: 0
-      Marker:
-        Enable: 0
-        Texture: {fileID: 0}
-        Size: {x: 0, y: 0}
-        OffsetScaleX: 1
-        PixelOffsetX: 0
-        PixelOffsetY: 0
   - PathRule:
       Value: Art
       Type: 0
@@ -188,13 +153,6 @@ MonoBehaviour:
         OverrideLabel: 0
         Label: 
       Icon:
-        Enable: 0
-        Texture: {fileID: 0}
-        Size: {x: 0, y: 0}
-        OffsetScaleX: 1
-        PixelOffsetX: 0
-        PixelOffsetY: 0
-      Marker:
         Enable: 0
         Texture: {fileID: 0}
         Size: {x: 0, y: 0}
@@ -225,13 +183,6 @@ MonoBehaviour:
         OffsetScaleX: 1
         PixelOffsetX: 0
         PixelOffsetY: 0
-      Marker:
-        Enable: 0
-        Texture: {fileID: 0}
-        Size: {x: 0, y: 0}
-        OffsetScaleX: 1
-        PixelOffsetX: 0
-        PixelOffsetY: 0
   - PathRule:
       Value: Module
       Type: 0
@@ -250,13 +201,6 @@ MonoBehaviour:
         OverrideLabel: 0
         Label: 
       Icon:
-        Enable: 0
-        Texture: {fileID: 0}
-        Size: {x: 0, y: 0}
-        OffsetScaleX: 1
-        PixelOffsetX: 0
-        PixelOffsetY: 0
-      Marker:
         Enable: 0
         Texture: {fileID: 0}
         Size: {x: 0, y: 0}
