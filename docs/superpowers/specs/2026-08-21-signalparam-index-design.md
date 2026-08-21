@@ -272,8 +272,9 @@ scans the payload once.
 ## Placement
 
 The algorithm moves into an instance class, `SignalParamResolver`, rather than
-growing the static `InjectionExtensions`. `InjectionExtensions` holds one
-resolver instance and delegates to it. This adds no new static state and makes
+growing the static `InjectionExtensions`. `Context` owns one resolver instance,
+lazily created and reached through an internal `IContext` member, so the resolver's
+lifetime matches the context that uses it. This adds no new static state and makes
 the resolver testable on its own.
 
 ## Files
