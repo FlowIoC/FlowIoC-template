@@ -113,13 +113,16 @@ AssignableMatch(v, t) = v == null ? CanHoldNull(t) : t.IsInstanceOfType(v)
 
 Candidates(t):
     exact = [i for i, v in values if ExactMatch(v, t)]
-    return exact.Count > 0
-        ? exact
-        : [i for i, v in values if AssignableMatch(v, t)]
+    // A null satisfies ExactMatch for any type that can hold one, so `exact` can be
+    // non-empty while holding nothing but nulls. Preferring it there would hide a
+    // real value that the assignable pass finds later in the payload.
+    if exact contains any i where values[i] != null
+        return exact
+    return [i for i, v in values if AssignableMatch(v, t)]
 ```
 
-The exact pass runs first and the assignable pass is only consulted when the
-exact pass finds nothing. This keeps the spirit of the current two-pass lookup
+The exact pass runs first, and the assignable pass is consulted when the exact
+pass finds nothing at all or nothing but nulls. This keeps the spirit of the current two-pass lookup
 while making the two passes coherent with each other — today they are independent
 `FirstOrDefault` calls, so a property could match one value in the first pass and
 a different one in the second.
@@ -136,13 +139,19 @@ Phase 1 — properties with an explicit index, in source order:
 
 Phase 2 — properties with no index, in source order:
     c = Candidates(entry.Type)
-    slot = first element of c with claimed[slot] == false
-    if none                                       -> log NoFreeSlot; skip
+    slot = first element of c with claimed[slot] == false and values[slot] != null
+    if none, slot = first element of c with claimed[slot] == false
+    if still none                                 -> log NoFreeSlot; skip
     claimed[slot] = true; assign values[slot]
 ```
 
 Indexed properties resolve first so that an unindexed property's result never
 depends on where the indexed ones happen to sit in the file.
+
+An unindexed property prefers a free slot that actually holds a value and takes a
+free null only when nothing else is left. Without that preference a null earlier in
+the payload would outbid a real value later in it, which is how an interface-typed
+property could end up bound to null.
 
 `HasIndex` distinguishes `[SignalParam]` from `[SignalParam(0)]`. The first means
 "the next unclaimed value of my type"; the second means "candidate zero,
@@ -169,9 +178,11 @@ and neither logs an error. The existing `param != null` success test is removed;
 Ambiguity between two `null` slots of compatible types is harmless, because the
 value assigned is `null` either way. The residual limitation is a payload that
 mixes a base type with a null, such as `Signal<object, string>` dispatched as
-`(null, "x")`, where both candidate lists become `[0, 1]`. The validation logging
-below makes that visible rather than silent. The type-aware variant would have
-removed it entirely and remains available as a follow-up.
+`(null, "x")`, where both candidate lists become `[0, 1]`. Two unindexed properties
+of that shape resolve silently: declaration order and the non-null preference above
+pick a winner and nothing is logged. Only the indexed variant of the collision is
+reported, as a `DuplicateClaim`. The type-aware variant would have removed it
+entirely and remains available as a follow-up.
 
 ## Attribute
 
